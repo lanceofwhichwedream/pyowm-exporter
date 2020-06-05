@@ -1,0 +1,14 @@
+version: '2.1'
+services:
+  owm-exporter:
+    image: lanceofwhichwedream/home-network:pyowm-exporter
+    container_name: pyowm-exporter
+    volumes:
+      - ~/pyowm-exporter:/usr/src/app/config
+    command: python zz-8.py
+    restart: unless-stopped
+    dns:
+      - 10.101.3.200
+      - 10.101.3.201
+    ports:
+      - 9119:9119
