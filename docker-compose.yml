@@ -4,7 +4,7 @@ services:
     image: lanceofwhichwedream/home-network:pyowm-exporter
     container_name: pyowm-exporter
     volumes:
-      - ~/pyowm-exporter:/usr/src/app/config
+      - ~/pyowm-exporter-config:/usr/src/app/config
     command: python pyowm-exporter.py
     restart: unless-stopped
     dns:
