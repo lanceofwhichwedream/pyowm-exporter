@@ -5,7 +5,7 @@ services:
     container_name: pyowm-exporter
     volumes:
       - ~/pyowm-exporter:/usr/src/app/config
-    command: python zz-8.py
+    command: python pyowm-exporter.py
     restart: unless-stopped
     dns:
       - 10.101.3.200

@@ -6,7 +6,6 @@ verify_ssl = true
 [dev-packages]
 ipython = "*"
 pytest = "*"
-black = "*"
 
 [packages]
 pyowm = "==3.0.0"
